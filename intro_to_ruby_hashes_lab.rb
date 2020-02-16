@@ -23,10 +23,11 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  
+  hash.each do |key, value|
   if hash.include?(key)
    hash[key] += 1
   else hash[key] = 1
   end
+end
   
 end
